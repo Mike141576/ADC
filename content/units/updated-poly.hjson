@@ -1,0 +1,8 @@
+research: {
+parent: poly
+requirements: [
+graphite/3000
+silicon/3000
+titanium/2400
+]
+}

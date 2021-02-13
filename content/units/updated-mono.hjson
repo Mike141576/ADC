@@ -1,0 +1,8 @@
+research: {
+parent: mono
+requirements: [
+lead/3000
+silicon/3000
+thorium/2300
+]
+}

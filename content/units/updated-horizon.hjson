@@ -1,0 +1,79 @@
+health: 540
+speed: 2.5
+accel: 0.09
+drag: 0.017
+flying: true
+hitSize: 12
+targetAir: false
+engineOffset: 7.8
+range: 130
+armor: 5
+faceTarget: false
+circleTarget: true
+weapons: [{
+name: bomber
+ignoreRotation: true
+minShootVelocity: 1
+shootY: 0
+shootCone: 180
+x: 3
+y: 0
+reload: 16
+ejectEffect: none
+inaccuracy: 15
+shootSound: none
+shots: 2
+bullet: {
+type: BombBulletType
+width: 14
+height: 14
+splashDamage: 45
+splashDamageRadius: 45
+hitEffect: flakExplosion
+shootEffect: none
+smokeEffect: none
+status: blasted
+}
+}
+{
+name: bomber
+ignoreRotation: true
+minShootVelocity: 1
+shootY: 0
+shootCone: 180
+x: 3
+y: -2
+reload: 60
+ejectEffect: none
+inaccuracy: 20
+shootSound: none
+bullet: {
+type: BombBulletType
+width: 20
+height: 20
+splashDamage: 60
+splashDamageRadius: 50
+hitEffect: flakExplosion
+shootEffect: none
+smokeEffect: none
+status: unmoving
+statusDuration: 80
+fragBullets: 2
+fragCone: 45
+fragBullet: {
+type: MissileBulletType
+width: 7
+height: 7
+speed: 4
+damage: 9
+}
+}
+}]
+research: {
+parent: horizon
+requirements: [
+silicon/4500
+titanium/5000
+metaglass/3500
+]
+}

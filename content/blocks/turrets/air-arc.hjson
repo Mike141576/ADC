@@ -1,0 +1,28 @@
+type: PowerTurret
+requirements: [
+copper/35
+lead/50
+]
+category: turret
+shootType: {
+type: LightningBulletType
+damage: 30
+lightningColor: FF4F00
+lightningLength: 30
+collidesAir: true
+collidesGround: false
+}
+reloadTime: 30
+shootCone: 40
+rotateSpeed: 8
+powerUse: 3
+targetAir: true
+targetGround: false
+range: 100
+shootEffect: lightningShoot
+heatColor: ff0000
+recoilAmount: 1
+size: 1
+health: 260
+shootSound: spark
+research: arc

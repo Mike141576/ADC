@@ -1,0 +1,32 @@
+canBoost: true
+speed: 0.5
+boostMultiplier: 0.95
+health: 250
+armor: 4
+weapons: [{
+name: blasters
+top: false
+reload: 14
+alternate: true
+ejectEffect: casing1
+bullet: {
+type: BasicBulletType
+width: 11
+height: 16
+lifetime: 40
+inaccuracy: 5
+backColor: ea8878
+frontColor: feb380
+speed: 4
+damage: 14
+}
+}]
+research: {
+parent: dagger
+requirements: [
+lead/3500
+silicon/3000
+graphite/2700
+titanium/2000
+]
+}

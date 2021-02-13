@@ -1,0 +1,33 @@
+plans: [
+    {
+    unit: flare
+        requirements: [
+            silicon/15
+        ]
+        time: 900
+        }
+        {
+    unit: mono
+        requirements: [
+            silicon/30
+            lead/15
+        ]
+        time: 2100
+        }
+        {
+        unit: blade
+        requirements: [
+            lead/30
+            silicon/20
+        ]
+        time: 800
+    }
+    {
+        unit: snowflake
+        requirements: [
+            silicon/25
+            ice-cube/10
+        ]
+        time: 1000
+    }
+        ]

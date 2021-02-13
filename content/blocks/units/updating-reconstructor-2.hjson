@@ -1,0 +1,44 @@
+type: Reconstructor
+
+health: 2000
+size: 5
+constructTime: 500
+
+requirements: [
+    lead/300
+    silicon/250
+    titanium/250
+    metaglass/150
+]
+
+upgrades: [
+    [mega, updated-mega],
+    [zenith, updated-zenith],
+    [fortress, updated-fortress]
+]
+
+consumes: {
+    items: {
+        items: [
+            {
+                item: titanium
+                amount: 60
+            },
+            {
+                item: metaglass
+                amount: 60
+            },
+            {
+            item: silicon
+            amount: 70
+            },
+            {
+            item: thorium
+            amount: 30
+            }
+        ]
+    }
+    power: 7
+}
+category: units
+research: updating-reconstructor-1

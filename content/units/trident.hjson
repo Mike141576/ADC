@@ -1,0 +1,37 @@
+flying: true
+health: 560
+drag: 0.06
+accel: 0.05
+armor: 5
+engineOffset: 5
+buildSpeed: 2.3
+mineTier: 3
+mineSpeed: 4
+speed: 2.5
+weapons: [{
+name: heal-weapon-mount
+x: 5
+y: 0
+reload: 15
+alternate: true
+ejectEffect: none
+shootSound: lasershoot
+bullet: {
+type: LaserBoltBulletType
+speed: 6
+damage: 15
+healPercent: 2
+collidesTeam: true
+backColor: 98ffa9
+frontColor: ffffff
+hitColor: 98ffa9
+}
+}]
+research: {
+parent: poly
+requirements: [
+lead/3000
+silicon/2500
+titanium/2500
+]
+}

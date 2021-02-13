@@ -1,0 +1,18 @@
+type: ThermalGenerator
+health: 640
+category: power
+research: hydrogenerator
+requirements: [
+graphite/65
+silicon/60
+metaglass/60
+titanium/65
+thorium/80
+]
+powerProduction: 2
+generateEffect: redgeneratespark
+size: 2
+floating: true
+ambientSound: hum
+ambientSoundVolume: 0.06
+attribute: spores

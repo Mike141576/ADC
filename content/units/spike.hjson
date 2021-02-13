@@ -1,0 +1,154 @@
+flying: true
+health: 8600
+drag: 0.04
+engineSize: 13
+engineOffset: 17
+hitSize: 55
+armor: 9
+rotateSpeed: 1.8
+lowAltitude: true
+accel: 0.04
+speed: 0.8
+targetFlag: generator
+weapons: [{
+name: spike-swarmer
+mirror: false
+x: 0
+y: 5
+shots: 6
+spacing: 4
+reload: 50
+shotDelay: 6
+inaccuracy: 4
+xRand: 6
+shootSound: missile
+rotate: true
+bullet: {
+type: MissileBulletType
+width: 9
+height: 9
+lifetime: 50
+speed: 5
+damage: 10
+homingPower: 3
+homingRange: 20
+backColor: 6d56bf
+frontColor: bf92f9
+hitColor: bf92f9
+trailColor: 6d56bf
+keepVelocity: false
+hitEffect: blastExplosion
+despawnEffect: blastExplosion
+velocityRnd: 0.3
+weaveScale: 2
+weaveMag: 1
+fragBullets: 4
+fragCone: 360
+lightning: 2
+lightningLength: 7
+lightningDamage: 9
+lightningColor: bf92f9
+splashDamage: 20
+splashDamageRadius: 40
+fragBullet: {
+type: BasicBulletType
+width: 10
+height: 10
+speed: 6
+damage: 10
+lifetime: 17
+pierce: true
+pierceCap: 3
+backColor: 6d56bf
+frontColor: bf92f9
+}
+}
+}
+{
+name: laser-cannon
+x: 12
+y: 4
+reload: 80
+recoil: 4
+shootCone: 90
+shootSound: laser
+shots: 3
+spacing: 4
+bullet: {
+type: LaserBulletType
+length: 200
+lifetime: 35
+drawSize: 200
+damage: 85
+colors: ["6d56bf", "bf92f9", "ffffff"]
+}
+}
+{
+name: bowler
+x: 0
+y: 7
+reload: 200
+recoil: 5
+shotDelay: 4
+mirror: false
+shootSound: artillery
+shake: 7
+bullet: {
+type: BasicBulletType
+width: 65
+height: 70
+shootEffect: shootBig
+hitSound: explosion
+hitShake: 7
+speed: 2.5
+damage: 500
+splashDamageRadius: 200
+splashDamage: 100
+lifetime: 90
+hitEffect: sapExplosion
+despawnEffect: sapExplosion
+backColor: 6d56bf
+frontColor: bf92f9
+status: unmoving
+statusDuration: 200
+lightning: 6
+lightningLength: 20
+lightningDamage: 20
+lightningColor: bf92f9
+fragBullets: 12
+fragCone: 360
+fragLifeMin: 0.3
+lightning: 6
+lightningLength: 15
+lightningDamage: 30
+lightningColor: bf92f9
+fragBullet: {
+type: ArtilleryBulletType
+width: 30
+height: 30
+hitShake: 5
+speed: 5
+damage: 8
+splashDamage: 20
+splashDamageRadius: 100
+lifetime: 60
+hitSize: 30
+hitEffect: sapExplosion
+despawnEffect: sapExplosion
+backColor: 6d56bf
+frontColor: bf92f9
+status: sapped
+statusDuration: 120
+}
+}
+}]
+research: {
+parent: sting
+requirements: [
+silicon/10000
+titanium/12000
+thorium/15000
+metaglass/10000
+plastanium/8000
+]
+}

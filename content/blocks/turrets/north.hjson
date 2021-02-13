@@ -1,0 +1,45 @@
+type: PowerTurret
+health: 2000
+size: 3
+powerUse: 2
+hasPower: true
+shots: 2
+burstSpacing: 2
+shootSound: lasershoot
+reloadTime: 9
+recoilAmount: 2
+shootCone: 90
+cooldown: 0.03
+range: 120
+shootType: {
+type: LaserBoltBulletType
+speed: 7
+height: 10
+damage: 15
+status: freezing
+statusDuration: 80
+frontColor: 00F1FF
+backColor: 00ABFF
+hitColor: 00D1FF
+fragBullets: 4
+fragCone: 60
+fragBullet: {
+type: BasicBulletType
+width: 8
+height: 8
+lifetime: 25
+speed: 6
+damage: 20
+homingPower: 4
+homingRange: 60
+frontColor: FFFFFF
+backColor: 00ABFF
+}
+}
+category: turret
+research: parallax
+requirements: [
+graphite/120
+silicon/100
+titanium/90
+]

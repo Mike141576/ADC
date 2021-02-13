@@ -1,0 +1,30 @@
+flying: true
+speed: 2
+drag: 0.06
+accel: 0.08
+health: 360
+hitSize: 8
+armor: 9
+circleTarget: true
+range: 140
+weapons: [{
+name: crown-flamethrower
+x: 5
+y: 5
+reload: 9
+ejectEffect: none
+shootSound: flame
+alternate: false
+shots: 2
+bullet: pyraFlame
+}
+]
+research: {
+parent: crown
+requirements: [
+silicon/3400
+graphite/2900
+metaglass/2200
+thorium/1200
+]
+}

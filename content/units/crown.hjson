@@ -1,0 +1,49 @@
+flying: true
+speed: 1
+drag: 0.01
+health: 240
+armor: 6
+commandLimit: 4
+weapons: [{
+name: crown-missiles
+x: 5
+y: 0
+reload: 140
+shots: 4
+inaccuracy: 2
+alternate: true
+ejectEffect: none
+velocityRnd: 0.2
+spacing: 1
+bullet: {
+type:  MissileBulletType
+width: 8
+height: 8
+shrink: 0
+drag: -0.003
+keepVelocity: false
+splashDamageRadius: 20
+splashDamage: 5
+speed: 5
+damage: 15
+lifetime: 90
+trailColor: 6d56bf
+hitEffect: blastExplosion
+despawnEffect: blastExplosion
+backColor: 6d56bf
+frontColor: bf92f9
+weaveScale: 8
+weaveMag: 2
+}
+shootSound: missile
+}
+]
+research: {
+parent: arrow
+requirements: [
+lead/5000
+silicon/3500
+titanium/3000
+metaglass/2500
+]
+}

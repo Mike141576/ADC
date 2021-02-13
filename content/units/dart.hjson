@@ -1,0 +1,36 @@
+type: flying
+flying: true
+accel: 0.05
+drag: 0.09
+circleTarget: true
+health: 200
+speed: 5
+weapons: [{
+name: blasters
+x: 2
+y: -1
+reload: 12
+alternate: true
+ejectEffect: casing1
+shots: 2
+bullet: {
+type: BasicBulletType
+width: 8
+height: 11
+lifetime: 35
+speed: 7
+damage: 15
+backColor: d06b53
+frontColor: ffa665
+homingPower: 2
+homingRange: 15
+}
+}]
+research: {
+parent: flare
+requirements: [
+copper/1200
+lead/950
+silicon/400
+]
+}

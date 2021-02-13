@@ -1,0 +1,171 @@
+flying: true
+health: 21000
+drag: 0.05
+accel: 0.08
+engineOffset: 38
+hitSize: 58
+engineSize: 7.3
+armor: 12
+rotateSpeed: 0.8
+lowAltitude: true
+speed: 0.6
+destructibleWreck: false
+targetFlag: core
+weapons: [{
+name: small-spheres-guns
+x: 8
+y: 7
+reload: 50
+recoil: 2
+shake: 3
+shootCone: 45
+rotate: true
+shots: 2
+shotDelay: 2
+alternate: true
+shootSound: small-sphere-shoot
+bullet: {
+type: BasicBulletType
+width: 15
+height: 15
+shootEffect: shootBig
+hitSound: small-sphere-hit
+hitShake: 3
+speed: 4
+damage: 45
+splashDamageRadius: 45
+splashDamage: 20
+lifetime: 55
+hitEffect: sapExplosion
+despawnEffect: sapExplosion
+hitSize: 45
+backColor: 6d56bf
+frontColor: bf92f9
+status: unmoving
+statusDuration: 80
+lightning: 2
+lightningLength: 7
+lightningDamage: 10
+}
+}
+{
+name: small-spheres-guns
+x: 14
+y: -5
+reload: 60
+recoil: 3
+shake: 4
+shootCone: 40
+rotate: true
+alternate: true
+shootSound: small-sphere-shoot
+bullet: {
+type: BasicBulletType
+width: 15
+height: 15
+shootEffect: shootBig
+hitSound: small-sphere-hit
+hitShake: 3
+speed: 3
+damage: 60
+splashDamageRadius: 45
+splashDamage: 50
+lifetime: 55
+hitEffect: sapExplosion
+despawnEffect: sapExplosion
+hitSize: 45
+backColor: 6d56bf
+frontColor: bf92f9
+status: unmoving
+statusDuration: 80
+lightning: 2
+lightningLength: 7
+lightningDamage: 10
+}
+}
+{
+name: laser-cannon
+x: 12
+y: 4
+reload: 80
+recoil: 4
+shootCone: 90
+shootSound: triple-laser
+shots: 3
+spacing: 4
+rotate: true
+bullet: {
+type: LaserBulletType
+length: 200
+lifetime: 35
+drawSize: 200
+damage: 85
+colors: ["6d56bf", "bf92f9", "ffffff"]
+}
+}
+{
+name: bowler
+x: 0
+y: 14
+reload: 300
+recoil: 5
+shotDelay: 5
+mirror: false
+shootSound: release
+shake: 10
+bullet: {
+type: BasicBulletType
+width: 90
+height: 90
+shootEffect: shootBig
+hitSound: explosionbig
+hitShake: 10
+speed: 2.5
+damage: 800
+splashDamageRadius: 500
+splashDamage: 300
+lifetime: 70
+hitEffect: sapExplosion
+despawnEffect: sapExplosion
+backColor: 6d56bf
+frontColor: bf92f9
+status: unmoving
+statusDuration: 250
+lightning: 6
+lightningLength: 20
+lightningDamage: 30
+lightningColor: bf92f9
+fragBullets: 12
+fragCone: 360
+fragLifeMin: 0.5
+fragBullet: {
+type: ArtilleryBulletType
+width: 40
+height: 40
+hitShake: 7
+speed: 4
+damage: 10
+splashDamage: 25
+splashDamageRadius: 120
+lifetime: 50
+hitSize: 25
+hitEffect: sapExplosion
+despawnEffect: sapExplosion
+backColor: 6d56bf
+frontColor: bf92f9
+status: sapped
+statusDuration: 200
+}
+}
+}]
+research: {
+parent: spike
+requirements: [
+silicon/45000
+titanium/45000
+thorium/40000
+metaglass/35000
+plastanium/20000
+surge-alloy/25000
+]
+}

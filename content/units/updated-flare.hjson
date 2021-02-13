@@ -1,0 +1,38 @@
+flying: true
+speed: 6
+accel: 0.012
+drag: 0.02
+flying: true
+health: 200
+engineOffset: 5.5
+targetAir: false
+commandLimit: 4
+circleTarget: true
+armor: 2
+weapons: [{
+name: small-weapon
+y: 0
+x: 2
+reload: 9
+ejectEffect: casing1
+shots: 6
+bullet: {
+type: BasicBulletType
+speed: 4
+damage: 30
+width: 7
+height: 9
+lifetime: 40
+shootEffect: shootSmall
+smokeEffect: shootSmallSmoke
+ammoMultiplier: 3
+}
+shootSound: pew2
+}]
+research: {
+parent: flare
+requirements: [
+silicon/4000
+titanium/3000
+]
+}

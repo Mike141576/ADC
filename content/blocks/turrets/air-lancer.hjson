@@ -1,0 +1,38 @@
+type: PowerTurret
+requirements: [
+copper/30
+lead/60
+silicon/55
+]
+range: 200
+chargeTime: 40
+chargeMaxDelay: 30
+chargeEffects: 7
+recoilAmount: 2
+reloadTime: 75
+cooldown: 0.03
+powerUse: 6.3
+shootShake: 2
+shootEffect: lancerLaserShoot
+smokeEffect: none
+chargeEffect: lancerLaserCharge
+chargeBeginEffect: lancerLaserChargeBegin
+heatColor: ff0000
+size: 2
+health: 1200
+targetGround: false
+targetAir: true
+shootSound: laser
+shootType: {
+type: LaserBulletType
+colors: ["FF3C00", "FF5600", "FFFFFF"]
+hitEffect: hitLancer
+despawnEffect: none
+hitSize: 5
+lifetime: 18
+drawSize: 400
+length: 230
+damage: 180
+}
+category: turret
+research: air-arc

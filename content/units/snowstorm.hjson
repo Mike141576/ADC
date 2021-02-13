@@ -1,0 +1,93 @@
+flying: true
+health: 17000
+engineOffset: 38
+hitSize: 58
+engineSize: 7.3
+armor: 10
+rotateSpeed: 0.8
+lowAltitude: true
+speed: 0.6
+destructibleWreck: false
+targetFlag: core
+accel: 0.08
+drag: 0.08
+range: 90
+weapons: [{
+name: snowlaser-cannon
+mirror: false
+x: 0
+y: 0
+reload: 120
+recoil: 5
+rotate: true
+rotateSpeed: 2
+shootSound: laser
+status: freezing
+statusDuration: 120
+shootY: 5
+bullet: {
+type: LaserBulletType
+damage: 160
+sideAngle: 30
+sideWidth: 4
+sideLength: 90
+width: 45
+length: 300
+shootEffect: shockwave
+}
+}
+{
+name: snow-big-cannons
+x: 12
+y: 12
+reload: 60
+shots: 6
+shotDelay: 6
+shootCone: 160
+alternate: true
+rotate: true
+recoil: 4
+shootSound: bang
+ejectEffect: casing3
+bullet: {
+type: BasicBulletType
+width: 20
+height: 25
+damage: 60
+lifetime: 55
+speed: 9
+hitSound: explosion
+shootEffect: shootBig
+hitEffect: flakExplosionBig
+despawnEffect: flakExplosionBig
+backColor: 497ac9
+frontColor: 5ce9ff
+status: freezing
+statusDuration: 120
+fragBullets: 1
+fragCone: 360
+fragBullet: {
+type: ArtilleryBulletType
+width: 10
+height: 10
+lifetime: 70
+speed: 3.2
+splashDamage: 45
+splashDamageRadius: 60
+backColor: 497ac9
+trailColor: 497ac9
+frontColor: 5ce9ff
+}
+}
+}]
+research: {
+parent: glacier
+requirements: [
+silicon/45000
+ice-cube/40000
+titanium/40000
+thorium/35000
+metaglass/30000
+plastanium/20000
+]
+}

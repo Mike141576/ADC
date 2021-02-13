@@ -1,0 +1,127 @@
+flying: true
+health: 4500
+accel: 0.010
+drag: 0.04
+armor: 10
+speed: 1.5
+lowAltitude: true
+engineSize: 4.7
+engineOffset: 19
+weapons: [{
+name: snow-missiles
+x: 5
+y: 5
+reload: 45
+shots: 4
+shotDelay: 2
+shootCone: 90
+recoil: 2
+shootSound: missile
+spacing: 3
+inaccuracy: 4
+alternate: true
+rotate: true
+rotateSpeed: 3
+bullet: {
+type: MissileBulletType
+width: 9
+height: 9
+keepVelocity: false
+speed: 4
+damage: 25
+splashDamage: 25
+splashDamageRadius: 20
+lifetime: 65
+drag: -0.001
+weaveScale: 4
+weaveMag: 4
+hitEffect: blastExplosion
+despawnEffect: blastExplosion
+backColor: 497ac9
+trailColor: 497ac9
+frontColor: 5ce9ff
+hitColor: 5c9aff
+fragBullets: 4
+fragLifeMin: 0.3
+fragCone: 70
+pierce: true
+pierceCap: 2
+status: freezing
+statusDuration: 160
+fragBullet: {
+type: BasicBulletType
+width: 8
+height: 8
+speed: 8
+damage: 20
+buildingDamageMultiplier: 2
+homingRange: 12
+backColor: 497ac9
+frontColor: 5ce9ff
+hitColor: 5c9aff
+}
+}
+}
+{
+name: snow-cannons
+x: 5
+y: 1
+reload: 9
+alternate: true
+shootCone: 30
+rotate: true
+rotateSpeed: 2.8
+shootSound: bang
+bullet: {
+type: BasicBulletType
+width: 14
+status: freezing
+statusDuration: 120
+height: 14
+speed: 5
+damage: 15
+splashDamage: 45
+splashDamageRadius: 50
+lifetime: 60
+hitEffect: flakExplosion
+despawnEffect: flakExplosion
+backColor: 497ac9
+frontColor: 5ce9ff
+hitColor: 5c9aff
+}
+}
+{
+name: snowlaser-cannon
+mirror: false
+x: 0
+y: 0
+reload: 90
+recoil: 3
+rotate: true
+rotateSpeed: 2
+shootSound: laser
+status: freezing
+statusDuration: 80
+shootY: 5
+bullet: {
+type: LaserBulletType
+damage: 80
+sideAngle: 25
+sideWidth: 2
+sideLength: 85
+width: 30
+length: 250
+shootEffect: shockwave
+}
+}]
+research: {
+parent: ice-hail
+requirements: [
+silicon/9000
+titanium/10000
+thorium/9000
+ice-cube/6000
+plastanium/5000
+]
+}
+
